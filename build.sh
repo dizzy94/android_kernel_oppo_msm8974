@@ -9,7 +9,7 @@ restore='\033[0m'
 clear
 
 # Resources
-THREAD="-j$(grep -c ^processor /proc/cpuinfo)"
+THREAD="-j$(grep -c ^processor /proc/cpuinfo) CONFIG_NO_ERROR_ON_MISMATCH=y"
 KERNEL="zImage"
 DTBIMAGE="dtb"
 DEFCONFIG="find7_defconfig"
@@ -30,7 +30,7 @@ KERNEL_DIR=`pwd`
 REPACK_DIR="/media/dizzy/Extern/android/AK-OnePone-AnyKernel2"
 PATCH_DIR="/media/dizzy/Extern/android/AK-OnePone-AnyKernel2/patch"
 MODULES_DIR="/media/dizzy/Extern/android/AK-OnePone-AnyKernel2/modules"
-ZIP_MOVE="/media/dizzy/Extern/android/releases"
+ZIP_MOVE="/media/dizzy/Extern/android/releases/"
 ZIMAGE_DIR="/media/dizzy/Extern/android/find7_kernel_cm/arch/arm/boot"
 
 # Functions
